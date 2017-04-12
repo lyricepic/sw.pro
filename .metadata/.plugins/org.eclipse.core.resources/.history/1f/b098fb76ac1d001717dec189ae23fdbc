@@ -1,0 +1,39 @@
+package Practice;
+
+import java.io.FileInputStream;
+import java.util.Scanner;
+
+public class C {
+	
+	public static void main(String[] args) throws Exception{
+		
+		System.setIn(new FileInputStream("test.txt"));
+		Scanner sc = new Scanner(System.in);
+		
+		int T = sc.nextInt();
+		int test_case;
+		
+		for(test_case = 1; test_case <= T; test_case++){
+			// 입력부
+			int cnt = sc.nextInt();
+			int[] bin = new int[cnt*4];
+			
+			String strNum = sc.next();
+			
+			for(int i = 0; i < cnt; cnt++){
+				int num = strNum.charAt(i) - '0';
+				for(int j = 0; j < 4; j++){
+					bin[i*4-j] = num % 2;
+				}
+			}
+			// 솔루션
+			String binStr = "";
+			for(int i = 0; i < cnt*4; i++){
+				binStr += bin[i];
+			}
+			
+			// 출력부
+			System.out.println("#" + test_case + binStr);
+		}
+	}
+}

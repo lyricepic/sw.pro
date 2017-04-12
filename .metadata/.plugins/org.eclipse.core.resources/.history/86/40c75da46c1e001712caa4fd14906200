@@ -1,0 +1,51 @@
+package P0411;
+
+import java.io.FileInputStream;
+import java.util.Scanner;
+
+public class C {
+	
+	static int N;
+	static int E;
+	static int[][] M;
+	static int[] visited;
+	static int[] path;
+	
+	public static void main(String[] args) throws Exception{
+		
+		System.setIn(new FileInputStream("test.txt"));
+		Scanner sc = new Scanner(System.in);
+		
+		int T = sc.nextInt();
+		int test_case;
+		
+		for(test_case = 1; test_case <= T; test_case++){
+
+			N = sc.nextInt();
+			E = sc.nextInt();
+			M = new int[N][N];
+			visited = new int[N];
+			path = new int[E];
+			
+			for(int i = 0; i < E; i++){
+				int a = sc.nextInt();
+				int b = sc.nextInt();
+				M[a][b] = 1;
+			}
+			
+			
+			System.out.println("#" + test_case);
+		}
+	}
+	
+	static void dfs(int n){
+		
+		for(int i = 0; i < N; i++){
+			if(visited[i] == 0 && M[n][i] == 1){
+				visited[i] = 1;
+				dfs(i);
+				visited[i] = 0;
+			}
+		}
+	}
+}
