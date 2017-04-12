@@ -1,0 +1,41 @@
+package P0412;
+
+import java.io.FileInputStream;
+import java.util.Scanner;
+
+public class B {
+	
+	static int N = 0;
+	static int[][] M = 0;
+	
+	public static void main(String[] args) throws Exception{
+		
+		System.setIn(new FileInputStream("test.txt"));
+		Scanner sc = new Scanner(System.in);
+		
+		int T = sc.nextInt();
+		int test_case;
+		
+		for(test_case = 1; test_case <= T; test_case++){
+			// 입력부
+			N = sc.nextInt();
+			M = new int[N][N];
+			
+			for(int i = 0; i < N; i++){
+				for(int j = 0; j < N; j++){
+					M[i][j] = sc.nextInt();
+				}
+			}
+			
+			// 솔루션
+			int result = f();
+			
+			// 출력부
+			System.out.println("#" + test_case + " " + result);
+		}
+	}
+	
+	static int f(int r, int c){
+		
+	}
+}

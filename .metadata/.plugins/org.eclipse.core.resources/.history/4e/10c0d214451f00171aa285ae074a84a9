@@ -1,0 +1,130 @@
+Debug&Run
+대회
+[
+문제 모음
+채점 상황 열람
+순위
+통계
+]
+jkpark
+문제 번호 C: 글자판
+시간 제한: 1 Sec  메모리 제한: 128 MB
+제출: 191  해결 문제 수: 64
+[제출][채점 상황 열람][게시판]
+문제 설명
+NxN 크기의 글자판이 있다. 이 글자판 안에서 주어진 문자열을 찾을 수 있으면 1, 없으면 0을 출력하라.
+
+
+글자판에서 문자열 패턴의 한 글자를 찾으면, 다음 글자는 상하좌우 어디에도 있을 수 있다. 단, 대각선 방향은 이어지지 않은 것이다. 글자판의 글자는 한번씩만 사용할 수 있다.
+
+다음은 찾고자 하는 문자열이 ABCDA일 때 어떤 모양으로 자리하는지 보여주는 예이다. 
+
+
+ 
+
+Z
+
+Z
+
+Z
+
+Z
+
+Z
+
+Z
+
+A(1)
+
+D(4)
+
+A(5)
+
+Z
+
+Z
+
+B(2)
+
+C(3)
+
+Z
+
+Z
+
+Z
+
+Z
+
+Z
+
+Z
+
+Z
+
+Z
+
+Z
+
+Z
+
+Z
+
+Z
+
+ 
+
+
+입력
+
+테스트케이스 개수, 케이스별 N, 찾을 문자열, NxN 글자판이 제공된다.
+
+10<=N<=100, 패턴의 길이 <= N
+
+
+
+
+출력
+#테스트케이스와 1 또는 0
+입력 예시
+4
+5
+ABCDA
+ZZZZZ
+ZADZZ
+ZBCZZ
+ZZZZZ
+ZZZZZ
+5
+ABCDA
+ZZZZZ
+ZADAZ
+ZBCZZ
+ZZZZZ
+ZZZZZ
+5
+ABCDA
+ZZZZZ
+ZADZZ
+ZBCZZ
+ZZBAZ
+ZZZZZ
+10
+GXCSVLNLF
+PHQGHUMEAY
+LNLFDXFIRC
+VSCXGGBWKF
+NQDUXWFNFO
+ZVSRTKJPRE
+PGGXRPNRVY
+STMWCYSYYC
+QPEVIKEFFM
+ZNIMKKASVW
+SRENZKYCXF
+출력 예시
+#1 0
+#2 1
+#3 1
+#4 1
+도움말
+[제출][채점 상황 열람]
