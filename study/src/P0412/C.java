@@ -1,8 +1,6 @@
 package P0412;
 
-import java.awt.Point;
 import java.io.FileInputStream;
-import java.util.LinkedList;
 import java.util.Scanner;
 
 public class C {
