@@ -12,11 +12,11 @@ public class Main {
 		int test_case;
 		
 		for(test_case = 1; test_case <= T; test_case++){
-			// 입력부
+			// INPUT
 			
-			// 솔루션
+			// SOLUTION
 			
-			// 출력부
+			// OUT
 			System.out.println("#" + test_case);
 		}
 	}
